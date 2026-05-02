@@ -1,7 +1,9 @@
 ﻿"use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { supabase } from "@/lib/supabase";
 import {
   Leaf,
   Mountain,
@@ -20,22 +22,26 @@ import {
   BanIcon,
 } from "lucide-react";
 
-const WHATSAPP_NUMBER = "51999999999";
+const WHATSAPP_NUMBER = "51955548641";
 const DISCOUNT_CODE = "GOXA15";
 
+
+const formatPhoneNumber = (value) => {
+  const digits = value.replace(/\D/g, "").slice(0, 9);
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 6) return `${digits.slice(0, 3)} ${digits.slice(3)}`;
+  return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6, 9)}`;
+};
+
 const districts = [
-  "Miraflores",
-  "San Isidro",
-  "Santiago de Surco",
-  "La Molina",
-  "Barranco",
-  "San Borja",
-  "Magdalena",
-  "Jesus Maria",
-  "Lince",
-  "San Miguel",
-  "Otro distrito de Lima",
-  "Provincia",
+  "Ancón", "Ate", "Barranco", "Breña", "Carabayllo", "Chaclacayo", "Chorrillos", "Cieneguilla", 
+  "Comas", "El Agustino", "Independencia", "Jesús María", "La Molina", "La Victoria", 
+  "Lima (Cercado)", "Lince", "Los Olivos", "Lurigancho-Chosica", "Lurín", "Magdalena del Mar", 
+  "Miraflores", "Pachacámac", "Pucusana", "Pueblo Libre", "Puente Piedra", "Punta Hermosa", 
+  "Punta Negra", "Rímac", "San Bartolo", "San Borja", "San Isidro", "San Juan de Lurigancho", 
+  "San Juan de Miraflores", "San Luis", "San Martín de Porres", "San Miguel", "Santa Anita", 
+  "Santa María del Mar", "Santa Rosa", "Santiago de Surco", "Surquillo", "Villa El Salvador", 
+  "Villa María del Triunfo", "Provincia", "Otro"
 ];
 
 const initialForm = {
@@ -43,12 +49,34 @@ const initialForm = {
   whatsapp: "",
   email: "",
   district: "",
+  acceptTerms: false,
+  acceptMarketing: false,
 };
 
 export default function Home() {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  // Load from localStorage on mount
+  useEffect(() => {
+    const saved = localStorage.getItem("goxa_form_data");
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        setForm(prev => ({ ...prev, ...parsed }));
+      } catch (e) {}
+    }
+    setIsLoaded(true);
+  }, []);
+
+  // Save to localStorage on change, but only after initial load
+  useEffect(() => {
+    if (isLoaded) {
+      localStorage.setItem("goxa_form_data", JSON.stringify(form));
+    }
+  }, [form, isLoaded]);
 
   const updateField = (field, value) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -65,27 +93,55 @@ export default function Home() {
     if (!/^\S+@\S+\.\S+$/.test(form.email.trim()))
       nextErrors.email = "Ingresa un correo valido.";
     if (!form.district) nextErrors.district = "Selecciona tu distrito.";
+    if (!form.acceptTerms) nextErrors.acceptTerms = "Debes aceptar los términos.";
     setErrors(nextErrors);
     return Object.keys(nextErrors).length === 0;
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (!validateForm()) return;
     setIsSubmitting(true);
+    
     const leadData = {
-      ...form,
+      full_name: form.fullName,
+      whatsapp: form.whatsapp,
+      email: form.email,
+      district: form.district,
       source: "Instagram/TikTok Landing GOXA",
-      discountCode: DISCOUNT_CODE,
-      createdAt: new Date().toISOString(),
+      discount_code: DISCOUNT_CODE,
+      accept_terms: form.acceptTerms,
+      accept_marketing: form.acceptMarketing,
     };
-    console.log("Lead capturado:", leadData);
-    const whatsappMessage = `Hola GOXA, quiero reclamar mi 15% de descuento.\n\nNombre: ${form.fullName}\nWhatsApp: ${form.whatsapp}\nCorreo: ${form.email}\nDistrito: ${form.district}\nCodigo: ${DISCOUNT_CODE}\nVengo desde Instagram/TikTok.`;
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
-    setTimeout(() => {
+
+    try {
+      const { error } = await supabase
+        .from("leads")
+        .insert([leadData]);
+
+      if (error) {
+        console.error("Error saving lead:", error);
+        alert("Hubo un error al guardar tus datos. Por favor intenta de nuevo.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      console.log("Lead guardado en Supabase:", leadData);
+      localStorage.removeItem("goxa_form_data");
+      
+      const whatsappMessage = `Hola GOXA, quiero reclamar mi 15% de descuento de bienvenida.
+
+Vengo desde Instagram/TikTok y me interesa probar sus productos naturales de Oxapampa.
+
+Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
+      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+      
       window.open(whatsappUrl, "_blank", "noopener,noreferrer");
       setIsSubmitting(false);
-    }, 500);
+    } catch (err) {
+      console.error("Unexpected error:", err);
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -218,7 +274,7 @@ export default function Home() {
               icon={<MessageCircle className="text-goxa-light" />}
               placeholder="WhatsApp (ej. 987 654 321)"
               value={form.whatsapp}
-              onChange={(value) => updateField("whatsapp", value)}
+              onChange={(value) => updateField("whatsapp", formatPhoneNumber(value))}
               error={errors.whatsapp}
               type="tel"
             />
@@ -247,6 +303,27 @@ export default function Home() {
                 <ChevronDown className="absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400 pointer-events-none" />
               </div>
               {errors.district && <p className="mt-1 pl-2 text-[11px] font-medium text-red-500">{errors.district}</p>}
+            </div>
+
+            
+            <div className="space-y-4 pt-2">
+              <CheckboxField
+                label={
+                  <>
+                    He leído y acepto los{" "}
+                    <Link href="/terminos" className="underline hover:text-goxa-green">Términos y Condiciones</Link> y la{" "}
+                    <Link href="/privacidad" className="underline hover:text-goxa-green">Política de Privacidad</Link> de GOXA.
+                  </>
+                }
+                checked={form.acceptTerms}
+                onChange={(val) => updateField("acceptTerms", val)}
+                error={errors.acceptTerms}
+              />
+              <CheckboxField
+                label={<>Autorizo a GOXA a enviarme <Link href="/comunicaciones" className="underline hover:text-goxa-green">comunicaciones comerciales, promociones, novedades y ofertas</Link> por canales digitales.</>}
+                checked={form.acceptMarketing}
+                onChange={(val) => updateField("acceptMarketing", val)}
+              />
             </div>
 
             <button
@@ -324,8 +401,26 @@ export default function Home() {
                 label="Años en Oxapampa"
               />
             </div>
-            <footer className="mt-5 flex items-center justify-center gap-2 text-[10px] text-white/80 font-medium tracking-wide">
-              <Leaf className="h-3 w-3 text-white/80" />
+                        <div className="mt-8 grid grid-cols-2 gap-8 text-left border-t border-white/10 pt-8">
+              <div>
+                <h4 className="text-[11px] font-bold text-goxa-gold-light uppercase tracking-wider mb-4">Enlaces</h4>
+                <ul className="space-y-2 text-[12px] text-white/60">
+                  <li><Link href="/">Inicio</Link></li>
+                  <li><Link href="#productos">Productos</Link></li>
+                  <li><Link href="#formulario">Contacto</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-[11px] font-bold text-goxa-gold-light uppercase tracking-wider mb-4">Legal</h4>
+                <ul className="space-y-2 text-[12px] text-white/60">
+                  <li><Link href="/terminos">Términos</Link></li>
+                  <li><Link href="/privacidad">Privacidad</Link></li>
+                  <li><Link href="/comunicaciones">Comunicaciones</Link></li>
+                </ul>
+              </div>
+            </div>
+            <footer className="mt-8 flex items-center justify-center gap-2 text-[10px] text-white/40 font-medium tracking-wide">
+              <Leaf className="h-3 w-3 text-white/30" />
               GOXA &bull; Oxapampa, Pasco - Perú
             </footer>
           </div>
@@ -422,13 +517,36 @@ function StatCard({ icon, value, label }) {
 
 
 
-
-
-
-
-
-
-
-
-
+function CheckboxField({ label, checked, onChange, error }) {
+  return (
+    <div className="flex flex-col gap-1 px-1">
+      <label className="flex items-start gap-3 cursor-pointer group">
+        <div className="relative flex items-center mt-0.5">
+          <input
+            type="checkbox"
+            checked={checked}
+            onChange={(e) => onChange(e.target.checked)}
+            className="peer h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-gray-300 bg-white transition-all checked:border-goxa-green checked:bg-goxa-green hover:border-goxa-green/50 focus:outline-none"
+          />
+          <svg
+            className="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <span className="text-[12px] font-medium leading-tight text-gray-600 group-hover:text-goxa-dark transition-colors">
+          {label}
+        </span>
+      </label>
+      {error && <p className="ml-8 text-[10px] font-medium text-red-500">{error}</p>}
+    </div>
+  );
+}
 
