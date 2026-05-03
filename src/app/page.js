@@ -179,7 +179,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                   GOXA
                 </h1>
                 <p className="text-[7px] font-bold tracking-[3px] text-goxa-green mt-0.5 uppercase drop-shadow-md">
-                  Goza del Perú
+                  Origen que se siente
                 </p>
               </div>
 

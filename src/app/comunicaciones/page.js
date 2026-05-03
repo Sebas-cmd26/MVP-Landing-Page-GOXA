@@ -168,7 +168,7 @@ export default function ComunicacionesPage() {
           <div className="flex flex-col items-center mb-10">
             <Image src="/logo.png" alt="GOXA Logo" width={48} height={48} className="invert brightness-0 opacity-80" />
             <h2 className="font-serif text-xl font-bold tracking-widest mt-2">GOXA</h2>
-            <p className="text-[10px] font-bold tracking-[3px] text-goxa-gold-light mt-1 uppercase">Goza del Perú</p>
+            <p className="text-[10px] font-bold tracking-[3px] text-goxa-gold-light mt-1 uppercase">Origen que se siente</p>
           </div>
 
           <div className="grid grid-cols-2 gap-8 mb-12">
