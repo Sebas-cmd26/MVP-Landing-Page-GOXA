@@ -152,7 +152,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
         <section className="relative overflow-hidden bg-[#F2EFE8]" style={{ minHeight: 640 }}>
           <div className="absolute bottom-0 w-full h-[450px] z-0">
             <Image
-              src="/goxa_hero_final.png"
+              src="/goxa_hero_v3.jpg"
               alt="GOXA Hero"
               fill
               className="object-cover object-[65%_bottom]"
