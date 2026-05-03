@@ -136,7 +136,7 @@ Vengo desde Instagram/TikTok y me interesa probar sus productos naturales de Oxa
 Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
       const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
       
-      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      window.location.href = whatsappUrl;
       setIsSubmitting(false);
     } catch (err) {
       console.error("Unexpected error:", err);
