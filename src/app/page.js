@@ -172,7 +172,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                   alt="GOXA Logo"
                   width={52}
                   height={52}
-                  className="object-contain drop-shadow-sm"
+                  className="object-contain drop-shadow-sm rounded-full"
                   style={{ mixBlendMode: "multiply" }}
                 />
                 <h1 className="font-serif text-2xl font-bold leading-none tracking-widest text-goxa-dark mt-1 drop-shadow-md">
@@ -415,7 +415,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                 <ul className="space-y-2 text-[12px] text-white/60">
                   <li><Link href="/terminos">Términos</Link></li>
                   <li><Link href="/privacidad">Privacidad</Link></li>
-                  <li><Link href="/comunicaciones">Comunicaciones</Link></li>
+                  <li><Link href="/comunicaciones">Comunicaciones</Link></li><li><Link href="/reclamaciones">Libro de Reclamaciones</Link></li>
                 </ul>
               </div>
             </div>

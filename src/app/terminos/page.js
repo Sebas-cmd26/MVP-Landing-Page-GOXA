@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -29,91 +29,91 @@ const sections = [
     id: "sobre-goxa",
     title: "1. Sobre GOXA",
     icon: <Leaf className="h-5 w-5" />,
-    content: "GOXA es una marca dedicada a la comercialización de productos naturales, artesanales y seleccionados, provenientes de Oxapampa y otras zonas productoras del Perú.\n\nA través de nuestros canales digitales, GOXA brinda información sobre sus productos, precios, disponibilidad, promociones, formas de pago y opciones de entrega."
+    content: "GOXA es una marca dedicada a la comercializaciÃ³n de productos naturales, artesanales y seleccionados, provenientes de Oxapampa y otras zonas productoras del PerÃº.\n\nA travÃ©s de nuestros canales digitales, GOXA brinda informaciÃ³n sobre sus productos, precios, disponibilidad, promociones, formas de pago y opciones de entrega."
   },
   {
     id: "uso-canales",
     title: "2. Uso de nuestros canales digitales",
     icon: <FileText className="h-5 w-5" />,
-    content: "El usuario puede interactuar con GOXA mediante nuestra página web, landing pages, formularios, redes sociales, anuncios digitales, WhatsApp, catálogos digitales u otros canales oficiales habilitados por la marca.\n\nEl usuario se compromete a utilizar estos canales de manera adecuada, brindando información verdadera, actual y completa. GOXA no se responsabiliza por errores en la atención, comunicación o entrega derivados de datos incorrectos o incompletos proporcionados por el usuario."
+    content: "El usuario puede interactuar con GOXA mediante nuestra pÃ¡gina web, landing pages, formularios, redes sociales, anuncios digitales, WhatsApp, catÃ¡logos digitales u otros canales oficiales habilitados por la marca.\n\nEl usuario se compromete a utilizar estos canales de manera adecuada, brindando informaciÃ³n verdadera, actual y completa. GOXA no se responsabiliza por errores en la atenciÃ³n, comunicaciÃ³n o entrega derivados de datos incorrectos o incompletos proporcionados por el usuario."
   },
   {
     id: "registro",
     title: "3. Registro de usuarios y datos",
     icon: <UserCheck className="h-5 w-5" />,
-    content: "Para brindar atención personalizada, enviar información comercial, compartir catálogo, coordinar pedidos o comunicar promociones, GOXA podrá solicitar datos como nombre completo, número de WhatsApp, correo electrónico, distrito, zona de residencia, producto de interés u otra información necesaria para la atención.\n\nEl usuario declara que los datos proporcionados son verdaderos y autoriza a GOXA a utilizarlos para fines relacionados con la atención comercial, gestión de pedidos, coordinación de entregas y comunicaciones vinculadas a sus productos y servicios."
+    content: "Para brindar atenciÃ³n personalizada, enviar informaciÃ³n comercial, compartir catÃ¡logo, coordinar pedidos o comunicar promociones, GOXA podrÃ¡ solicitar datos como nombre completo, nÃºmero de WhatsApp, correo electrÃ³nico, distrito, zona de residencia, producto de interÃ©s u otra informaciÃ³n necesaria para la atenciÃ³n.\n\nEl usuario declara que los datos proporcionados son verdaderos y autoriza a GOXA a utilizarlos para fines relacionados con la atenciÃ³n comercial, gestiÃ³n de pedidos, coordinaciÃ³n de entregas y comunicaciones vinculadas a sus productos y servicios."
   },
   {
     id: "productos",
     title: "4. Productos ofrecidos",
     icon: <Package className="h-5 w-5" />,
-    content: "GOXA puede ofrecer productos naturales, artesanales o seleccionados como café, miel, yogurt, lácteos, chocolates, snacks, alimentos de origen natural u otros productos relacionados.\n\nLa disponibilidad de productos puede variar según stock, temporada, proveedor, lote, zona de entrega o capacidad operativa.\n\nLas imágenes publicadas en nuestra página web, landing pages, redes sociales, anuncios o catálogos son referenciales. La presentación final del producto puede variar en empaque, etiqueta, tamaño, lote o presentación, sin afectar necesariamente la calidad del producto ofrecido."
+    content: "GOXA puede ofrecer productos naturales, artesanales o seleccionados como cafÃ©, miel, yogurt, lÃ¡cteos, chocolates, snacks, alimentos de origen natural u otros productos relacionados.\n\nLa disponibilidad de productos puede variar segÃºn stock, temporada, proveedor, lote, zona de entrega o capacidad operativa.\n\nLas imÃ¡genes publicadas en nuestra pÃ¡gina web, landing pages, redes sociales, anuncios o catÃ¡logos son referenciales. La presentaciÃ³n final del producto puede variar en empaque, etiqueta, tamaÃ±o, lote o presentaciÃ³n, sin afectar necesariamente la calidad del producto ofrecido."
   },
   {
     id: "precios",
     title: "5. Precios y promociones",
     icon: <Bell className="h-5 w-5" />,
-    content: "Los precios publicados en nuestros canales digitales pueden variar según campaña, promoción, stock disponible, canal de venta, zona de entrega o actualización comercial.\n\nEl precio final de cada pedido será confirmado por GOXA antes de concretar la compra.\n\nGOXA podrá ofrecer promociones, descuentos, beneficios de bienvenida, códigos promocionales o campañas especiales. Cada promoción podrá estar sujeta a condiciones específicas como vigencia, stock disponible, monto mínimo de compra, zona de cobertura, uso único por cliente, restricciones por producto o no acumulación con otras promociones.\n\nSalvo que se indique expresamente lo contrario, los descuentos no son acumulables entre sí ni aplican sobre costos de envío."
+    content: "Los precios publicados en nuestros canales digitales pueden variar segÃºn campaÃ±a, promociÃ³n, stock disponible, canal de venta, zona de entrega o actualizaciÃ³n comercial.\n\nEl precio final de cada pedido serÃ¡ confirmado por GOXA antes de concretar la compra.\n\nGOXA podrÃ¡ ofrecer promociones, descuentos, beneficios de bienvenida, cÃ³digos promocionales o campaÃ±as especiales. Cada promociÃ³n podrÃ¡ estar sujeta a condiciones especÃ­ficas como vigencia, stock disponible, monto mÃ­nimo de compra, zona de cobertura, uso Ãºnico por cliente, restricciones por producto o no acumulaciÃ³n con otras promociones.\n\nSalvo que se indique expresamente lo contrario, los descuentos no son acumulables entre sÃ­ ni aplican sobre costos de envÃ­o."
   },
   {
     id: "pedidos",
     title: "6. Pedidos y pagos",
     icon: <CreditCard className="h-5 w-5" />,
-    content: "El pedido se considera iniciado cuando el usuario solicita productos a través de WhatsApp, formulario, catálogo digital, redes sociales u otro canal oficial de GOXA.\n\nEl pedido se considera confirmado únicamente cuando GOXA valida el producto solicitado, cantidad, precio, datos del cliente, zona de entrega, medio de pago y disponibilidad de stock.\n\nGOXA podrá rechazar, cancelar o reprogramar un pedido si no existe stock, si los datos proporcionados son incorrectos, si no se confirma el pago o si la zona de entrega no se encuentra disponible.\n\nLos medios de pago disponibles serán informados por GOXA al momento de confirmar el pedido. En caso de pagos por transferencia, billeteras digitales u otros medios, GOXA podrá solicitar constancia de pago."
+    content: "El pedido se considera iniciado cuando el usuario solicita productos a travÃ©s de WhatsApp, formulario, catÃ¡logo digital, redes sociales u otro canal oficial de GOXA.\n\nEl pedido se considera confirmado Ãºnicamente cuando GOXA valida el producto solicitado, cantidad, precio, datos del cliente, zona de entrega, medio de pago y disponibilidad de stock.\n\nGOXA podrÃ¡ rechazar, cancelar o reprogramar un pedido si no existe stock, si los datos proporcionados son incorrectos, si no se confirma el pago o si la zona de entrega no se encuentra disponible.\n\nLos medios de pago disponibles serÃ¡n informados por GOXA al momento de confirmar el pedido. En caso de pagos por transferencia, billeteras digitales u otros medios, GOXA podrÃ¡ solicitar constancia de pago."
   },
   {
     id: "entregas",
     title: "7. Entregas y cobertura",
     icon: <Truck className="h-5 w-5" />,
-    content: "Las entregas estarán sujetas a cobertura geográfica, disponibilidad logística, horarios de atención, demanda, condiciones climáticas, feriados u otros factores externos.\n\nGOXA informará al cliente el tiempo estimado de entrega antes de confirmar el pedido. Dicho tiempo es referencial y puede variar por causas ajenas a la marca.\n\nEl cliente es responsable de brindar correctamente su dirección, distrito, referencia, número de contacto y disponibilidad para recibir el pedido."
+    content: "Las entregas estarÃ¡n sujetas a cobertura geogrÃ¡fica, disponibilidad logÃ­stica, horarios de atenciÃ³n, demanda, condiciones climÃ¡ticas, feriados u otros factores externos.\n\nGOXA informarÃ¡ al cliente el tiempo estimado de entrega antes de confirmar el pedido. Dicho tiempo es referencial y puede variar por causas ajenas a la marca.\n\nEl cliente es responsable de brindar correctamente su direcciÃ³n, distrito, referencia, nÃºmero de contacto y disponibilidad para recibir el pedido."
   },
   {
     id: "cambios",
     title: "8. Cambios, cancelaciones y devoluciones",
     icon: <RotateCcw className="h-5 w-5" />,
-    content: "El cliente podrá solicitar cambios o cancelaciones antes de la confirmación final del pedido o antes de que este sea despachado.\n\nUna vez despachado el pedido, cualquier cambio, cancelación o devolución será evaluado por GOXA según el caso concreto.\n\nPor tratarse de productos alimenticios, las devoluciones estarán sujetas a revisión de las condiciones de conservación, manipulación, empaque, fecha de entrega y evidencia presentada por el cliente.\n\nGOXA podrá aceptar cambios, reposiciones o devoluciones cuando exista un error atribuible a la marca, como entrega de producto incorrecto, daño evidente durante el despacho o incumplimiento de condiciones previamente confirmadas."
+    content: "El cliente podrÃ¡ solicitar cambios o cancelaciones antes de la confirmaciÃ³n final del pedido o antes de que este sea despachado.\n\nUna vez despachado el pedido, cualquier cambio, cancelaciÃ³n o devoluciÃ³n serÃ¡ evaluado por GOXA segÃºn el caso concreto.\n\nPor tratarse de productos alimenticios, las devoluciones estarÃ¡n sujetas a revisiÃ³n de las condiciones de conservaciÃ³n, manipulaciÃ³n, empaque, fecha de entrega y evidencia presentada por el cliente.\n\nGOXA podrÃ¡ aceptar cambios, reposiciones o devoluciones cuando exista un error atribuible a la marca, como entrega de producto incorrecto, daÃ±o evidente durante el despacho o incumplimiento de condiciones previamente confirmadas."
   },
   {
     id: "responsabilidad",
     title: "9. Responsabilidad sobre el consumo de productos",
     icon: <ShieldCheck className="h-5 w-5" />,
-    content: "El usuario es responsable de revisar la información del producto, ingredientes, fecha de vencimiento, condiciones de conservación y cualquier advertencia aplicable antes de consumirlo.\n\nSi el usuario presenta alergias, restricciones alimentarias, intolerancias o condiciones de salud particulares, deberá consultarlo previamente antes de realizar la compra.\n\nLa información compartida por GOXA no reemplaza consejo médico, nutricional o profesional especializado."
+    content: "El usuario es responsable de revisar la informaciÃ³n del producto, ingredientes, fecha de vencimiento, condiciones de conservaciÃ³n y cualquier advertencia aplicable antes de consumirlo.\n\nSi el usuario presenta alergias, restricciones alimentarias, intolerancias o condiciones de salud particulares, deberÃ¡ consultarlo previamente antes de realizar la compra.\n\nLa informaciÃ³n compartida por GOXA no reemplaza consejo mÃ©dico, nutricional o profesional especializado."
   },
   {
     id: "propiedad",
     title: "10. Propiedad intelectual",
     icon: <Lock className="h-5 w-5" />,
-    content: "El nombre GOXA, logotipo, identidad visual, textos, fotografías, diseños, piezas publicitarias, catálogos, contenido de redes sociales y demás elementos de comunicación pertenecen a GOXA o cuentan con autorización para su uso.\n\nQueda prohibida la reproducción, modificación, distribución o uso comercial no autorizado de dichos contenidos."
+    content: "El nombre GOXA, logotipo, identidad visual, textos, fotografÃ­as, diseÃ±os, piezas publicitarias, catÃ¡logos, contenido de redes sociales y demÃ¡s elementos de comunicaciÃ³n pertenecen a GOXA o cuentan con autorizaciÃ³n para su uso.\n\nQueda prohibida la reproducciÃ³n, modificaciÃ³n, distribuciÃ³n o uso comercial no autorizado de dichos contenidos."
   },
   {
     id: "uso-indebido",
     title: "11. Uso indebido de nuestros canales",
     icon: <ShieldCheck className="h-5 w-5" />,
-    content: "El usuario se compromete a no utilizar los canales de GOXA para brindar información falsa, realizar pedidos fraudulentos, suplantar identidad, usar indebidamente promociones, afectar la operación de la marca o enviar contenido ofensivo, ilegal o perjudicial.\n\nGOXA podrá restringir la atención a usuarios que incurran en conductas indebidas."
+    content: "El usuario se compromete a no utilizar los canales de GOXA para brindar informaciÃ³n falsa, realizar pedidos fraudulentos, suplantar identidad, usar indebidamente promociones, afectar la operaciÃ³n de la marca o enviar contenido ofensivo, ilegal o perjudicial.\n\nGOXA podrÃ¡ restringir la atenciÃ³n a usuarios que incurran en conductas indebidas."
   },
   {
     id: "reclamaciones",
     title: "12. Libro de Reclamaciones",
     icon: <BookOpen className="h-5 w-5" />,
-    content: "GOXA pondrá a disposición del consumidor los canales correspondientes para la atención de quejas o reclamos conforme a la normativa aplicable.\n\nEl usuario podrá presentar consultas, quejas o reclamos a través de nuestros canales oficiales de atención o mediante el Libro de Reclamaciones virtual, cuando este se encuentre habilitado.\n\nLibro de Reclamaciones: https://wa.me/51955548641\nCanal de atención: WhatsApp 955 548 641 o hola@goxa.pe"
+    content: "GOXA pondrÃ¡ a disposiciÃ³n del consumidor los canales correspondientes para la atenciÃ³n de quejas o reclamos conforme a la normativa aplicable.\n\nEl usuario podrÃ¡ presentar consultas, quejas o reclamos a travÃ©s de nuestros canales oficiales de atenciÃ³n o mediante el Libro de Reclamaciones virtual, cuando este se encuentre habilitado.\n\nLibro de Reclamaciones: https://wa.me/51955548641\nCanal de atenciÃ³n: WhatsApp 955 548 641 o hola@goxa.pe"
   },
   {
     id: "modificaciones",
-    title: "13. Modificaciones de los términos",
+    title: "13. Modificaciones de los tÃ©rminos",
     icon: <Settings className="h-5 w-5" />,
-    content: "GOXA podrá actualizar, modificar o reemplazar estos Términos y Condiciones cuando lo considere necesario.\n\nLa versión vigente será la publicada en la página web, landing page o canal oficial correspondiente. El uso continuo de nuestros canales implica la aceptación de la versión vigente."
+    content: "GOXA podrÃ¡ actualizar, modificar o reemplazar estos TÃ©rminos y Condiciones cuando lo considere necesario.\n\nLa versiÃ³n vigente serÃ¡ la publicada en la pÃ¡gina web, landing page o canal oficial correspondiente. El uso continuo de nuestros canales implica la aceptaciÃ³n de la versiÃ³n vigente."
   },
   {
     id: "legislacion",
-    title: "14. Legislación aplicable",
+    title: "14. LegislaciÃ³n aplicable",
     icon: <ShieldCheck className="h-5 w-5" />,
-    content: "Estos Términos y Condiciones se rigen por las leyes de la República del Perú.\n\nCualquier controversia será atendida inicialmente a través de los canales de atención de GOXA, sin perjuicio de los derechos que correspondan al consumidor conforme a la normativa peruana aplicable."
+    content: "Estos TÃ©rminos y Condiciones se rigen por las leyes de la RepÃºblica del PerÃº.\n\nCualquier controversia serÃ¡ atendida inicialmente a travÃ©s de los canales de atenciÃ³n de GOXA, sin perjuicio de los derechos que correspondan al consumidor conforme a la normativa peruana aplicable."
   },
   {
     id: "contacto",
     title: "15. Contacto",
     icon: <Mail className="h-5 w-5" />,
-    content: "Para consultas, pedidos, reclamos o solicitudes relacionadas con estos Términos y Condiciones, puedes comunicarte con GOXA a través de:\n\nWhatsApp: 955 548 641\nCorreo electrónico: hola@goxa.pe\nUbicación: Oxapampa, Pasco - Perú\nHorario de atención: Lunes a Sábado de 9:00 am a 6:00 pm"
+    content: "Para consultas, pedidos, reclamos o solicitudes relacionadas con estos TÃ©rminos y Condiciones, puedes comunicarte con GOXA a travÃ©s de:\n\nWhatsApp: 955 548 641\nCorreo electrÃ³nico: hola@goxa.pe\nUbicaciÃ³n: Oxapampa, Pasco - PerÃº\nHorario de atenciÃ³n: Lunes a SÃ¡bado de 9:00 am a 6:00 pm"
   }
 ];
 
@@ -133,7 +133,7 @@ export default function TerminosPage() {
             <span className="text-[14px] font-bold">Volver</span>
           </Link>
           <div className="flex flex-col items-center">
-            <Image src="/logo.png" alt="GOXA Logo" width={40} height={40} className="object-contain" />
+            <Image src="/logo.png" alt="GOXA Logo" width={40} height={40} className="object-contain rounded-full" />
           </div>
           <div className="w-10"></div>
         </div>
@@ -142,25 +142,25 @@ export default function TerminosPage() {
       <section className="max-w-[430px] mx-auto px-6 pt-10">
         <div className="text-center mb-10">
           <h1 className="font-serif text-[32px] font-bold leading-tight text-goxa-dark">
-            Términos y Condiciones
+            TÃ©rminos y Condiciones
             <span className="block text-[24px] font-medium text-goxa-green mt-1">de GOXA</span>
           </h1>
           <div className="flex justify-center my-4">
             <Leaf className="h-6 w-6 text-goxa-gold" />
           </div>
           <p className="text-[13px] text-gray-500 font-medium">
-            Última actualización: 01 de mayo de 2024
+            Ãšltima actualizaciÃ³n: 01 de mayo de 2024
           </p>
           <p className="mt-6 text-[14px] leading-relaxed text-goxa-dark/80">
-            En GOXA queremos que tu experiencia sea clara, segura y confiable. Estos Términos y Condiciones regulan el uso de nuestros canales digitales, formularios, redes sociales, WhatsApp, catálogo digital y cualquier otro medio mediante el cual ofrecemos nuestros productos.
+            En GOXA queremos que tu experiencia sea clara, segura y confiable. Estos TÃ©rminos y Condiciones regulan el uso de nuestros canales digitales, formularios, redes sociales, WhatsApp, catÃ¡logo digital y cualquier otro medio mediante el cual ofrecemos nuestros productos.
             <br /><br />
-            Al navegar por nuestros canales, solicitar información, registrarte o realizar un pedido, declaras haber leído y aceptado estos Términos y Condiciones.
+            Al navegar por nuestros canales, solicitar informaciÃ³n, registrarte o realizar un pedido, declaras haber leÃ­do y aceptado estos TÃ©rminos y Condiciones.
           </p>
         </div>
 
         <div className="bg-white rounded-[32px] p-6 shadow-sm border border-gray-100 mb-8">
           <div className="flex items-center justify-between w-full mb-6">
-            <h2 className="text-[18px] font-bold text-goxa-dark">En esta página</h2>
+            <h2 className="text-[18px] font-bold text-goxa-dark">En esta pÃ¡gina</h2>
             <ChevronDown className="h-5 w-5 text-gray-400" />
           </div>
           <div className="grid grid-cols-1 gap-4">
@@ -221,16 +221,16 @@ export default function TerminosPage() {
             <MessageCircle className="h-20 w-20 text-goxa-green" />
           </div>
           <div className="relative z-10">
-            <h2 className="text-[20px] font-bold text-goxa-dark mb-2">¿Tienes dudas?</h2>
-            <p className="text-[14px] text-gray-600 mb-6">Estamos aquí para ayudarte en lo que necesites.</p>
+            <h2 className="text-[20px] font-bold text-goxa-dark mb-2">Â¿Tienes dudas?</h2>
+            <p className="text-[14px] text-gray-600 mb-6">Estamos aquÃ­ para ayudarte en lo que necesites.</p>
             <a 
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola GOXA, tengo una duda sobre los términos y condiciones.")}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola GOXA, tengo una duda sobre los tÃ©rminos y condiciones.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-goxa-dark text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:bg-goxa-green transition-all"
             >
               <MessageCircle className="h-5 w-5 text-[#25D366]" />
-              Escríbenos por WhatsApp
+              EscrÃ­benos por WhatsApp
             </a>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function TerminosPage() {
       <footer className="bg-goxa-dark text-white mt-16 rounded-t-[40px] px-8 pt-12 pb-8">
         <div className="max-w-[430px] mx-auto">
           <div className="flex flex-col items-center mb-10">
-            <Image src="/logo.png" alt="GOXA Logo" width={48} height={48} className="invert brightness-0 opacity-80" />
+            <Image src="/logo.png" alt="GOXA Logo" width={48} height={48} className="invert brightness-0 opacity-80 rounded-full" />
             <h2 className="font-serif text-xl font-bold tracking-widest mt-2">GOXA</h2>
             <p className="text-[10px] font-bold tracking-[3px] text-goxa-gold-light mt-1 uppercase">Origen que se siente</p>
           </div>
@@ -257,9 +257,9 @@ export default function TerminosPage() {
             <div>
               <h4 className="text-[12px] font-bold text-goxa-gold-light uppercase tracking-wider mb-4">Legal</h4>
               <ul className="space-y-3 text-[13px] text-white/70 font-medium">
-                <li><Link href="/terminos">Términos y Condiciones</Link></li>
-                <li><Link href="/privacidad">Política de Privacidad</Link></li>
-                <li><Link href="/comunicaciones">Autorización de Comunicaciones</Link></li>
+                <li><Link href="/terminos">TÃ©rminos y Condiciones</Link></li>
+                <li><Link href="/privacidad">PolÃ­tica de Privacidad</Link></li>
+                <li><Link href="/comunicaciones">AutorizaciÃ³n de Comunicaciones</Link></li>
                 <li><Link href="/reclamaciones">Libro de Reclamaciones</Link></li>
               </ul>
             </div>
@@ -267,7 +267,7 @@ export default function TerminosPage() {
 
           <div className="border-t border-white/10 pt-8 text-center">
             <p className="text-[11px] text-white/50 font-medium">
-              © 2025 GOXA. Todos los derechos reservados.
+              Â© 2025 GOXA. Todos los derechos reservados.
             </p>
           </div>
         </div>
