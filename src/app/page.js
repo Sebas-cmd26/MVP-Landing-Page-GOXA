@@ -415,7 +415,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                 <ul className="space-y-2 text-[12px] text-white/60">
                   <li><Link href="/terminos">Términos</Link></li>
                   <li><Link href="/privacidad">Privacidad</Link></li>
-                  <li><Link href="/comunicaciones">Comunicaciones</Link></li><li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={30} height={20} className="object-contain" />Libro de Reclamaciones</Link></li>
+                  <li><Link href="/comunicaciones">Comunicaciones</Link></li><li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
                 </ul>
               </div>
             </div>
