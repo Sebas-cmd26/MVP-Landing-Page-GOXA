@@ -260,7 +260,7 @@ export default function TerminosPage() {
                 <li><Link href="/terminos">TÃ©rminos y Condiciones</Link></li>
                 <li><Link href="/privacidad">PolÃ­tica de Privacidad</Link></li>
                 <li><Link href="/comunicaciones">AutorizaciÃ³n de Comunicaciones</Link></li>
-                <li><Link href="/reclamaciones">Libro de Reclamaciones</Link></li>
+                <li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={30} height={20} className="object-contain" />Libro de Reclamaciones</Link></li>
               </ul>
             </div>
           </div>
