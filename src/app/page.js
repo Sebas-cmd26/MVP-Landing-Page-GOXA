@@ -89,9 +89,9 @@ export default function Home() {
     if (form.fullName.trim().length < 5)
       nextErrors.fullName = "Ingresa tu nombre completo.";
     if (phoneDigits.length !== 9)
-      nextErrors.whatsapp = "Ingresa un WhatsApp de 9 digitos.";
+      nextErrors.whatsapp = "Ingresa un WhatsApp de 9 dígitos.";
     if (!/^\S+@\S+\.\S+$/.test(form.email.trim()))
-      nextErrors.email = "Ingresa un correo valido.";
+      nextErrors.email = "Ingresa un correo válido.";
     if (!form.district) nextErrors.district = "Selecciona tu distrito.";
     if (!form.acceptTerms) nextErrors.acceptTerms = "Debes aceptar los términos.";
     setErrors(nextErrors);
@@ -216,12 +216,12 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
             />
             <Benefit
               icon={<Mountain className="h-5 w-5" />}
-              title="Apoyamos a mas de 150 familias de Oxapampa"
-              text="Impulsamos economias locales sostenibles."
+              title="Apoyamos a más de 150 familias de Oxapampa"
+              text="Impulsamos economías locales sostenibles."
             />
             <Benefit
               icon={<Truck className="h-5 w-5" />}
-              title="Entrega rapida en Lima"
+              title="Entrega rápida en Lima"
               text="Frescos, seguros y directamente a tu casa."
             />
           </div>
@@ -235,7 +235,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
             </div>
             <div className="flex-1">
               <p className="text-[10px] font-bold tracking-widest text-white/60 uppercase mb-0.5">Bienvenido a GOXA</p>
-              <h2 className="font-serif text-[16px] font-bold leading-tight">Registrate y recibe</h2>
+              <h2 className="font-serif text-[16px] font-bold leading-tight">Regístrate y recibe</h2>
               <p className="text-[22px] font-black text-goxa-gold-light leading-tight">15% DE DESCUENTO</p>
               <p className="text-[12px] text-white/80 mt-0.5">en tu primer pedido.</p>
             </div>
@@ -280,7 +280,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
             />
             <InputField
               icon={<Mail className="text-goxa-light" />}
-              placeholder="Correo electronico"
+              placeholder="Correo electrónico"
               value={form.email}
               onChange={(value) => updateField("email", value)}
               error={errors.email}
@@ -295,7 +295,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                   onChange={(e) => updateField("district", e.target.value)}
                   className="h-[54px] w-full appearance-none rounded-xl bg-transparent pl-12 pr-10 text-[14px] text-gray-700 outline-none"
                 >
-                  <option value="">En que distrito vives?</option>
+                  <option value="">¿En qué distrito vives?</option>
                   {districts.map((d) => (
                     <option key={d} value={d}>{d}</option>
                   ))}
@@ -320,7 +320,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                 error={errors.acceptTerms}
               />
               <CheckboxField
-                label={<>Autorizo a GOXA a enviarme <Link href="/comunicaciones" className="underline hover:text-goxa-green">comunicaciones comerciales, promociones, novedades y ofertas</Link> por canales digitales.</>}
+                label={<>Autorizo a GOXA a enviarme <Link href="/comunicaciónes" className="underline hover:text-goxa-green">comunicaciónes comerciales, promociónes, novedades y ofertas</Link> por canales digitales.</>}
                 checked={form.acceptMarketing}
                 onChange={(val) => updateField("acceptMarketing", val)}
               />
@@ -338,10 +338,10 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
 
           <div className="mt-5 space-y-1 text-[11px] leading-relaxed text-goxa-green/80">
             <p className="flex items-center justify-center gap-1.5 font-medium">
-              <Lock className="h-3.5 w-3.5" /> Tus datos estan 100% seguros.
+              <Lock className="h-3.5 w-3.5" /> Tus datos están 100% seguros.
             </p>
             <p className="flex items-center justify-center gap-1.5">
-              <ShieldCheck className="h-3.5 w-3.5" /> No compartimos tu informacion. Sin spam.
+              <ShieldCheck className="h-3.5 w-3.5" /> No compartimos tu información. Sin spam.
             </p>
           </div>
         </section>
@@ -365,7 +365,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
             <ReviewCard
               name="Carlos F."
               location="Miraflores, Lima"
-              text="El yogurt natural es delicioso, se nota la calidad. Ademas llego super rapido y bien empacado."
+              text="El yogurt natural es delicioso, se nota la calidad. Además llegó súper rápido y bien empacado."
               avatarColor="bg-[#8B6B4A]"
               initials="CF"
             />
@@ -415,7 +415,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                 <ul className="space-y-2 text-[12px] text-white/60">
                   <li><Link href="/terminos">Términos</Link></li>
                   <li><Link href="/privacidad">Privacidad</Link></li>
-                  <li><Link href="/comunicaciones">Comunicaciones</Link></li><li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
+                  <li><Link href="/comunicaciónes">Comunicaciones</Link></li><li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
                 </ul>
               </div>
             </div>
