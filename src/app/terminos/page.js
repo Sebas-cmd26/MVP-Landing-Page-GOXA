@@ -60,7 +60,7 @@ const sections = [
 
     icon: <Leaf className="h-5 w-5" />,
 
-    content: "GOXA es una marca dedicada a la comercialización de productos naturales, artesanales y seleccionados, provenientes de Oxapampa y otras zonas productoras del Perú.\n\nA través de nuestros canales digitales, GOXA brinda información sobre sus productos, precios, disponibilidad, promociónes, formas de pago y opciones de entrega."
+    content: "GOXA es una marca dedicada a la comercialización de productos naturales, artesanales y seleccionados, provenientes de Oxapampa y otras zonas productoras del Perú.\n\nA través de nuestros canales digitales, GOXA brinda información sobre sus productos, precios, disponibilidad, promociones, formas de pago y opciones de entrega."
 
   },
 
@@ -84,7 +84,7 @@ const sections = [
 
     icon: <UserCheck className="h-5 w-5" />,
 
-    content: "Para brindar atención personalizada, enviar información comercial, compartir catálogo, coordinar pedidos o comunicar promociónes, GOXA podrá solicitar datos como nombre completo, número de WhatsApp, correo electrónico, distrito, zona de residencia, producto de interés u otra información necesaria para la atención.\n\nEl usuario declara que los datos proporcionados son verdaderos y autoriza a GOXA a utilizarlos para fines relacionados con la atención comercial, gestión de pedidos, coordinación de entregas y comunicaciónes vinculadas a sus productos y servicios."
+    content: "Para brindar atención personalizada, enviar información comercial, compartir catálogo, coordinar pedidos o comunicar promociones, GOXA podrá solicitar datos como nombre completo, número de WhatsApp, correo electrónico, distrito, zona de residencia, producto de interés u otra información necesaria para la atención.\n\nEl usuario declara que los datos proporcionados son verdaderos y autoriza a GOXA a utilizarlos para fines relacionados con la atención comercial, gestión de pedidos, coordinación de entregas y comunicaciones vinculadas a sus productos y servicios."
 
   },
 
@@ -104,11 +104,11 @@ const sections = [
 
     id: "precios",
 
-    title: "5. Precios y promociónes",
+    title: "5. Precios y promociones",
 
     icon: <Bell className="h-5 w-5" />,
 
-    content: "Los precios publicados en nuestros canales digitales pueden variar según campaña, promoción, stock disponible, canal de venta, zona de entrega o actualización comercial.\n\nEl precio final de cada pedido será confirmado por GOXA antes de concretar la compra.\n\nGOXA podrá ofrecer promociónes, descuentos, beneficios de bienvenida, códigos promociónales o campañas especiales. Cada promoción podrá estar sujeta a condiciones específicas como vigencia, stock disponible, monto mínimo de compra, zona de cobertura, uso único por cliente, restricciones por producto o no acumulación con otras promociónes.\n\nSalvo que se indique expresamente lo contrario, los descuentos no son acumulables entre sí ni aplican sobre costos de envío."
+    content: "Los precios publicados en nuestros canales digitales pueden variar según campaña, promoción, stock disponible, canal de venta, zona de entrega o actualización comercial.\n\nEl precio final de cada pedido será confirmado por GOXA antes de concretar la compra.\n\nGOXA podrá ofrecer promociones, descuentos, beneficios de bienvenida, códigos promociónales o campañas especiales. Cada promoción podrá estar sujeta a condiciones específicas como vigencia, stock disponible, monto mínimo de compra, zona de cobertura, uso único por cliente, restricciones por producto o no acumulación con otras promociones.\n\nSalvo que se indique expresamente lo contrario, los descuentos no son acumulables entre sí ni aplican sobre costos de envío."
 
   },
 
@@ -180,7 +180,7 @@ const sections = [
 
     icon: <ShieldCheck className="h-5 w-5" />,
 
-    content: "El usuario se compromete a no utilizar los canales de GOXA para brindar información falsa, realizar pedidos fraudulentos, suplantar identidad, usar indebidamente promociónes, afectar la operación de la marca o enviar contenido ofensivo, ilegal o perjudicial.\n\nGOXA podrá restringir la atención a usuarios que incurran en conductas indebidas."
+    content: "El usuario se compromete a no utilizar los canales de GOXA para brindar información falsa, realizar pedidos fraudulentos, suplantar identidad, usar indebidamente promociones, afectar la operación de la marca o enviar contenido ofensivo, ilegal o perjudicial.\n\nGOXA podrá restringir la atención a usuarios que incurran en conductas indebidas."
 
   },
 
@@ -520,7 +520,7 @@ export default function TérminosPage() {
 
                 <li><Link href="/privacidad">Política de Privacidad</Link></li>
 
-                <li><Link href="/comunicaciónes">Autorización de Comunicaciones</Link></li>
+                <li><Link href="/comunicaciones">Autorización de Comunicaciones</Link></li>
 
                 <li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
 

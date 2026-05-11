@@ -320,7 +320,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                 error={errors.acceptTerms}
               />
               <CheckboxField
-                label={<>Autorizo a GOXA a enviarme <Link href="/comunicaciónes" className="underline hover:text-goxa-green">comunicaciónes comerciales, promociónes, novedades y ofertas</Link> por canales digitales.</>}
+                label={<>Autorizo a GOXA a enviarme <Link href="/comunicaciones" className="underline hover:text-goxa-green">comunicaciones comerciales, promociones, novedades y ofertas</Link> por canales digitales.</>}
                 checked={form.acceptMarketing}
                 onChange={(val) => updateField("acceptMarketing", val)}
               />
@@ -415,7 +415,7 @@ Quisiera ver el catálogo, precios y opciones de entrega a mi distrito.`;
                 <ul className="space-y-2 text-[12px] text-white/60">
                   <li><Link href="/terminos">Términos</Link></li>
                   <li><Link href="/privacidad">Privacidad</Link></li>
-                  <li><Link href="/comunicaciónes">Comunicaciones</Link></li><li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
+                  <li><Link href="/comunicaciones">Comunicaciones</Link></li><li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
                 </ul>
               </div>
             </div>

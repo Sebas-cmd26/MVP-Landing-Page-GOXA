@@ -52,7 +52,7 @@ const sections = [
 
     icon: <UserCheck className="h-5 w-5" />,
 
-    content: "Autorizas a GOXA a enviarte comunicaciónes comerciales relacionadas con sus productos, promociónes, descuentos, novedades, beneficios, campañas especiales, lanzamientos, recordatorios de compra, catálogos y ofertas disponibles.\n\nEsta autorización es independiente de la aceptación de los Términos y Condiciones. Puedes usar nuestros canales o solicitar información sin estar obligado/a a aceptar comunicaciónes promociónales, salvo aquellas necesarias para atender una consulta o pedido iniciado por ti."
+    content: "Autorizas a GOXA a enviarte comunicaciones comerciales relacionadas con sus productos, promociones, descuentos, novedades, beneficios, campañas especiales, lanzamientos, recordatorios de compra, catálogos y ofertas disponibles.\n\nEsta autorización es independiente de la aceptación de los Términos y Condiciones. Puedes usar nuestros canales o solicitar información sin estar obligado/a a aceptar comunicaciones promociónales, salvo aquellas necesarias para atender una consulta o pedido iniciado por ti."
 
   },
 
@@ -64,7 +64,7 @@ const sections = [
 
     icon: <Smartphone className="h-5 w-5" />,
 
-    content: "GOXA podrá enviarte comunicaciónes comerciales a través de los datos que nos proporciones, incluyendo:\n\n- WhatsApp.\n- Correo electrónico.\n- Llamadas telefónicas.\n- SMS.\n- Redes sociales u otros canales digitales relacionados con GOXA.\n\nEl canal principal de comunicación podrá ser WhatsApp, especialmente para compartir catálogo, disponibilidad, promociónes, precios y opciones de entrega."
+    content: "GOXA podrá enviarte comunicaciones comerciales a través de los datos que nos proporciones, incluyendo:\n\n- WhatsApp.\n- Correo electrónico.\n- Llamadas telefónicas.\n- SMS.\n- Redes sociales u otros canales digitales relacionados con GOXA.\n\nEl canal principal de comunicación podrá ser WhatsApp, especialmente para compartir catálogo, disponibilidad, promociones, precios y opciones de entrega."
 
   },
 
@@ -76,7 +76,7 @@ const sections = [
 
     icon: <Bell className="h-5 w-5" />,
 
-    content: "Podrás recibir información sobre:\n\n- Nuevos productos GOXA.\n- Promociones y descuentos.\n- Campañas por temporada.\n- Beneficios de bienvenida.\n- Catálogo actualizado.\n- Recomendaciones de productos.\n- Disponibilidad de stock.\n- Opciones de entrega.\n- Recordatorios o comunicaciónes relacionadas con productos de interés."
+    content: "Podrás recibir información sobre:\n\n- Nuevos productos GOXA.\n- Promociones y descuentos.\n- Campañas por temporada.\n- Beneficios de bienvenida.\n- Catálogo actualizado.\n- Recomendaciones de productos.\n- Disponibilidad de stock.\n- Opciones de entrega.\n- Recordatorios o comunicaciones relacionadas con productos de interés."
 
   },
 
@@ -84,11 +84,11 @@ const sections = [
 
     id: "datos-utilizados",
 
-    title: "4. Datos utilizados para estas comunicaciónes",
+    title: "4. Datos utilizados para estas comunicaciones",
 
     icon: <Info className="h-5 w-5" />,
 
-    content: "Para enviarte comunicaciónes comerciales, GOXA podrá utilizar datos como tu nombre, número de WhatsApp, correo electrónico, distrito, producto de interés, historial de consultas, preferencias declaradas o información relacionada con interacciones previas con la marca.\n\nEstos datos serán utilizados con la finalidad de personalizar la atención, enviarte información relevante y mejorar la experiencia de comunicación."
+    content: "Para enviarte comunicaciones comerciales, GOXA podrá utilizar datos como tu nombre, número de WhatsApp, correo electrónico, distrito, producto de interés, historial de consultas, preferencias declaradas o información relacionada con interacciones previas con la marca.\n\nEstos datos serán utilizados con la finalidad de personalizar la atención, enviarte información relevante y mejorar la experiencia de comunicación."
 
   },
 
@@ -100,7 +100,7 @@ const sections = [
 
     icon: <ShieldCheck className="h-5 w-5" />,
 
-    content: "La autorización para recibir comunicaciónes comerciales es opcional.\n\nSi decides no aceptarla, GOXA podrá contactarte únicamente para responder consultas que tú hayas iniciado, gestionar pedidos, coordinar entregas, confirmar pagos o atender solicitudes relacionadas con una compra o servicio solicitado por ti."
+    content: "La autorización para recibir comunicaciones comerciales es opcional.\n\nSi decides no aceptarla, GOXA podrá contactarte únicamente para responder consultas que tú hayas iniciado, gestionar pedidos, coordinar entregas, confirmar pagos o atender solicitudes relacionadas con una compra o servicio solicitado por ti."
 
   },
 
@@ -112,7 +112,7 @@ const sections = [
 
     icon: <Trash2 className="h-5 w-5" />,
 
-    content: "Puedes retirar tu autorización para recibir comunicaciónes comerciales en cualquier momento.\n\nPara hacerlo, puedes escribirnos por WhatsApp, correo electrónico o el canal oficial de atención de GOXA indicando que ya no deseas recibir promociónes, novedades u ofertas comerciales.\n\nDespués de recibir tu solicitud, GOXA dejará de enviarte comunicaciónes comerciales en un plazo razonable, sin afectar comunicaciónes necesarias para pedidos activos, consultas en curso o responsabilidades legales aplicables."
+    content: "Puedes retirar tu autorización para recibir comunicaciones comerciales en cualquier momento.\n\nPara hacerlo, puedes escribirnos por WhatsApp, correo electrónico o el canal oficial de atención de GOXA indicando que ya no deseas recibir promociones, novedades u ofertas comerciales.\n\nDespués de recibir tu solicitud, GOXA dejará de enviarte comunicaciones comerciales en un plazo razonable, sin afectar comunicaciones necesarias para pedidos activos, consultas en curso o responsabilidades legales aplicables."
 
   },
 
@@ -214,7 +214,7 @@ export default function ComunicacionesPage() {
 
           <p className="mt-6 text-[14px] leading-relaxed text-goxa-dark/80">
 
-            En GOXA queremos mantenerte informado/a sobre nuestros productos, novedades, promociónes y beneficios. Esta autorización explica cómo podremos contactarte si decides aceptar recibir comunicaciónes comerciales.
+            En GOXA queremos mantenerte informado/a sobre nuestros productos, novedades, promociones y beneficios. Esta autorización explica cómo podremos contactarte si decides aceptar recibir comunicaciones comerciales.
 
             <br /><br />
 
@@ -304,7 +304,7 @@ export default function ComunicacionesPage() {
 
             <a 
 
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola GOXA, deseo consultar sobre mi autorización de comunicaciónes comerciales.")}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola GOXA, deseo consultar sobre mi autorización de comunicaciones comerciales.")}`}
 
               target="_blank"
 
@@ -374,7 +374,7 @@ export default function ComunicacionesPage() {
 
                 <li><Link href="/privacidad">Política de Privacidad</Link></li>
 
-                <li><Link href="/comunicaciónes">Autorización de Comunicaciones</Link></li>
+                <li><Link href="/comunicaciones">Autorización de Comunicaciones</Link></li>
 
                 <li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
 

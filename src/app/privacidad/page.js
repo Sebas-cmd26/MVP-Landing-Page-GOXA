@@ -88,19 +88,19 @@ const sections = [
 
     icon: <Database className="h-5 w-5" />,
 
-    content: "Los datos personales proporcionados serán utilizados para las siguientes finalidades:\n\n- Atender consultas realizadas por el usuario.\n- Contactar al usuario por WhatsApp, correo electrónico, llamada u otros canales digitales.\n- Enviar información sobre productos, catálogo, precios y disponibilidad.\n- Gestionar registros realizados en formularios.\n- Confirmar pedidos, pagos y entregas.\n- Coordinar cambios, cancelaciones, devoluciones, quejas o reclamos.\n- Brindar soporte y atención al cliente.\n- Mejorar nuestros productos, canales digitales y experiencia de atención.\n- Cumplir obligaciones legales aplicables.\n\nCuando el usuario lo autorice expresamente, GOXA también podrá utilizar sus datos para enviar promociónes, novedades, descuentos, campañas comerciales, beneficios y ofertas personalizadas."
+    content: "Los datos personales proporcionados serán utilizados para las siguientes finalidades:\n\n- Atender consultas realizadas por el usuario.\n- Contactar al usuario por WhatsApp, correo electrónico, llamada u otros canales digitales.\n- Enviar información sobre productos, catálogo, precios y disponibilidad.\n- Gestionar registros realizados en formularios.\n- Confirmar pedidos, pagos y entregas.\n- Coordinar cambios, cancelaciones, devoluciones, quejas o reclamos.\n- Brindar soporte y atención al cliente.\n- Mejorar nuestros productos, canales digitales y experiencia de atención.\n- Cumplir obligaciones legales aplicables.\n\nCuando el usuario lo autorice expresamente, GOXA también podrá utilizar sus datos para enviar promociones, novedades, descuentos, campañas comerciales, beneficios y ofertas personalizadas."
 
   },
 
   {
 
-    id: "comunicaciónes",
+    id: "comunicaciones",
 
     title: "4. Comunicaciones comerciales",
 
     icon: <Bell className="h-5 w-5" />,
 
-    content: "El envío de comunicaciónes comerciales, promociónes, descuentos, novedades u ofertas de GOXA se realizará únicamente cuando el usuario haya otorgado su autorización, por ejemplo, al marcar la casilla correspondiente en un formulario.\n\nEstas comunicaciónes podrán realizarse por WhatsApp, correo electrónico, llamadas, SMS, redes sociales u otros canales digitales proporcionados por el usuario.\n\nEl usuario podrá retirar su autorización para recibir comunicaciónes comerciales en cualquier momento escribiendo a los canales oficiales de GOXA."
+    content: "El envío de comunicaciones comerciales, promociones, descuentos, novedades u ofertas de GOXA se realizará únicamente cuando el usuario haya otorgado su autorización, por ejemplo, al marcar la casilla correspondiente en un formulario.\n\nEstas comunicaciones podrán realizarse por WhatsApp, correo electrónico, llamadas, SMS, redes sociales u otros canales digitales proporcionados por el usuario.\n\nEl usuario podrá retirar su autorización para recibir comunicaciones comerciales en cualquier momento escribiendo a los canales oficiales de GOXA."
 
   },
 
@@ -124,7 +124,7 @@ const sections = [
 
     icon: <Info className="h-5 w-5" />,
 
-    content: "Los datos solicitados en formularios o canales de atención pueden ser necesarios para responder consultas, enviar información, coordinar pedidos o gestionar entregas.\n\nSi el usuario no proporciona los datos mínimos requeridos, GOXA podría no estar en capacidad de atender correctamente su solicitud, confirmar un pedido o coordinar una entrega.\n\nLa autorización para recibir comunicaciónes comerciales es facultativa y no condiciona la atención de consultas o pedidos iniciados por el usuario."
+    content: "Los datos solicitados en formularios o canales de atención pueden ser necesarios para responder consultas, enviar información, coordinar pedidos o gestionar entregas.\n\nSi el usuario no proporciona los datos mínimos requeridos, GOXA podría no estar en capacidad de atender correctamente su solicitud, confirmar un pedido o coordinar una entrega.\n\nLa autorización para recibir comunicaciones comerciales es facultativa y no condiciona la atención de consultas o pedidos iniciados por el usuario."
 
   },
 
@@ -184,7 +184,7 @@ const sections = [
 
     icon: <Trash2 className="h-5 w-5" />,
 
-    content: "El usuario podrá retirar su consentimiento para el tratamiento de sus datos personales o para el envío de comunicaciónes comerciales en cualquier momento.\n\nEl retiro del consentimiento no afectará la validez del tratamiento realizado antes de la solicitud ni impedirá que GOXA conserve información cuando exista una obligación legal, contractual o legítima para hacerlo."
+    content: "El usuario podrá retirar su consentimiento para el tratamiento de sus datos personales o para el envío de comunicaciones comerciales en cualquier momento.\n\nEl retiro del consentimiento no afectará la validez del tratamiento realizado antes de la solicitud ni impedirá que GOXA conserve información cuando exista una obligación legal, contractual o legítima para hacerlo."
 
   },
 
@@ -344,7 +344,7 @@ export default function PrivacidadPage() {
 
             <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> Podemos contactarte por WhatsApp, correo u otros canales digitales.</li>
 
-            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> Solo te enviaremos promociónes si das tu autorización.</li>
+            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> Solo te enviaremos promociones si das tu autorización.</li>
 
             <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> No vendemos tus datos personales.</li>
 
@@ -504,7 +504,7 @@ export default function PrivacidadPage() {
 
                 <li><Link href="/privacidad">Política de Privacidad</Link></li>
 
-                <li><Link href="/comunicaciónes">Autorización de Comunicaciones</Link></li>
+                <li><Link href="/comunicaciones">Autorización de Comunicaciones</Link></li>
 
                 <li><Link href="/reclamaciones" className="flex items-center gap-2 py-1"><Image src="/libro-reclamaciones.png" alt="Libro de Reclamaciones" width={40} height={26} className="object-contain" />Libro de Reclamaciones</Link></li>
 
