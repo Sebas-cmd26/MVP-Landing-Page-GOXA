@@ -300,7 +300,7 @@ export default function TérminosPage() {
 
           <p className="text-[13px] text-gray-500 font-medium">
 
-            šltima actualización: 01 de mayo de 2024
+            Última actualización: 01 de mayo de 2024
 
           </p>
 

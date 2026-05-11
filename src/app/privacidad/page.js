@@ -316,7 +316,7 @@ export default function PrivacidadPage() {
 
           <p className="text-[13px] text-gray-500 font-medium">
 
-            šltima actualización: 01 de mayo de 2024
+            Última actualización: 01 de mayo de 2024
 
           </p>
 
@@ -340,15 +340,15 @@ export default function PrivacidadPage() {
 
           <ul className="space-y-3 text-[14px] text-gray-600">
 
-            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">â€¢</div> Recopilamos tus datos para atender consultas, pedidos y entregas.</li>
+            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> Recopilamos tus datos para atender consultas, pedidos y entregas.</li>
 
-            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">â€¢</div> Podemos contactarte por WhatsApp, correo u otros canales digitales.</li>
+            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> Podemos contactarte por WhatsApp, correo u otros canales digitales.</li>
 
-            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">â€¢</div> Solo te enviaremos promociónes si das tu autorización.</li>
+            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> Solo te enviaremos promociónes si das tu autorización.</li>
 
-            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">â€¢</div> No vendemos tus datos personales.</li>
+            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> No vendemos tus datos personales.</li>
 
-            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">â€¢</div> Puedes solicitar acceso, corrección, eliminación u oposición al uso de tus datos.</li>
+            <li className="flex gap-3"><div className="h-5 w-5 shrink-0 flex items-center justify-center rounded-full bg-goxa-pale text-goxa-green">•</div> Puedes solicitar acceso, corrección, eliminación u oposición al uso de tus datos.</li>
 
           </ul>
 
